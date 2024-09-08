@@ -16,7 +16,7 @@ const generateRefreshToken = (user)=>{
 }
 
 
-const login = async (req,res)=>{
+export const login = async (req,res)=>{
     const {username,password} = req.body
     try {
         if(!username || !password){
@@ -74,6 +74,7 @@ const login = async (req,res)=>{
 
 
 export const refreshAccessToken = async (req, res) => {
+    console.log("lush")
     const { refreshToken } = req.body;
 
     if (!refreshToken) {
