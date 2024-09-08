@@ -71,3 +71,5 @@ bower_components
 # TSC (TypeScript specific)
 /tsconfig.json
 /tsconfig.*.json
+
+/uploads
