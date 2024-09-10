@@ -4,6 +4,7 @@ import connectDb from "./db/index.js"
 import logger from "./utils/logger.js"
 import morgan from "morgan"
 import userRouter from "./routes/userRoutes.js"
+import categoryRouter from "./routes/categoryRoutes.js"
 
 dotenv.config({
     path:"./.env"
@@ -41,7 +42,7 @@ app.use(
   );
 
 app.use("/api/v1/user",userRouter)
-
+app.use("/api/v1/category",categoryRouter)
 
 
  
